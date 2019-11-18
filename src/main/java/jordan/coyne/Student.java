@@ -11,7 +11,7 @@ public class Student {
     private ArrayList<CourseProgramme> courses = new ArrayList<>();
     private ArrayList<Module> modules = new ArrayList<>();
 
-    public Student(String name, int age, String DOB, long id, ArrayList<CourseProgramme> courses, ArrayList<Module> modules) {
+    public Student(String name, int age, String DOB, long id) {
         this.name = name;
         this.age = age;
         this.DOB = DOB;
