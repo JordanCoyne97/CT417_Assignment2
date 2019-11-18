@@ -26,8 +26,6 @@ public class TestMethods {
         String expectedAnswer = "Mike19";
         String answer = mike.getUserName();
 
-        ArrayList<Module> m = mike.getModules();
-        
         assertEquals(expectedAnswer, answer);
     }
 }
