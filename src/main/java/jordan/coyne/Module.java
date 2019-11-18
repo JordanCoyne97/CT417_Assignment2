@@ -8,10 +8,12 @@ public class Module {
     private ArrayList<Student> students = new ArrayList<>();
     private ArrayList<CourseProgramme> courses = new ArrayList<>();
 
-    public Module(String moduleName, ArrayList<Student> students, ArrayList<CourseProgramme> courses) {
+    public Module(){
+
+    }
+
+    public Module(String moduleName) {
         this.moduleName = moduleName;
-        this.students = students;
-        this.courses = courses;
     }
 
     public String getModuleName() {
