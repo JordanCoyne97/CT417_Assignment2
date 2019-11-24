@@ -8,7 +8,7 @@ public class Student {
     private String DOB;
     private long id;
     private String userName;
-    private ArrayList<CourseProgramme> courses = new ArrayList<>();
+    private CourseProgramme courses;
     private ArrayList<Module> modules = new ArrayList<>();
 
     public Student(String name, int age, String DOB, long id) {
@@ -57,11 +57,11 @@ public class Student {
         return name + age;
     }
 
-    public ArrayList<CourseProgramme> getCourses() {
+    public CourseProgramme getCourses() {
         return courses;
     }
 
-    public void setCourses(ArrayList<CourseProgramme> courses) {
+    public void setCourses(CourseProgramme courses) {
         this.courses = courses;
     }
 

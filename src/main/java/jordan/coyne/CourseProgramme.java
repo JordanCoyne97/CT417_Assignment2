@@ -12,6 +12,10 @@ public class CourseProgramme {
     private DateTime startDate;
     private DateTime endDate;
 
+    public CourseProgramme(){
+
+    }
+
     public CourseProgramme(String courseName, DateTime startDate, DateTime endDate) {
         this.courseName = courseName;
         this.startDate = startDate;
