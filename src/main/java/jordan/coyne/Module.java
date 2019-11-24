@@ -4,24 +4,25 @@ import java.util.ArrayList;
 
 public class Module {
 
+    private ArrayList<Module> modules = new ArrayList<>();
     private String moduleName;
     private ArrayList<Student> students = new ArrayList<>();
-    private ArrayList<CourseProgramme> courses = new ArrayList<>();
+    private CourseProgramme courses = new CourseProgramme();
 
-    public Module(){
-
+    public Module(String name){
+        this.moduleName = name;
     }
 
-    public Module(String moduleName) {
-        this.moduleName = moduleName;
+    public Module(ArrayList<Module> module) {
+        this.modules = module;
     }
 
-    public String getModuleName() {
-        return moduleName;
+    public ArrayList<Module> getModuleName() {
+        return modules;
     }
 
-    public void setModuleName(String moduleName) {
-        this.moduleName = moduleName;
+    public void setModuleName(ArrayList<Module> moduleName) {
+        this.modules = moduleName;
     }
 
     public ArrayList<Student> getStudents() {
@@ -32,11 +33,15 @@ public class Module {
         this.students = students;
     }
 
-    public ArrayList<CourseProgramme> getCourses() {
+    public CourseProgramme getCourses() {
         return courses;
     }
 
-    public void setCourses(ArrayList<CourseProgramme> courses) {
+    public void setCourses(CourseProgramme courses) {
         this.courses = courses;
+    }
+
+    public void setModuleName(String moduleName) {
+        this.moduleName = moduleName;
     }
 }

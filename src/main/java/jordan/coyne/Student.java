@@ -8,8 +8,12 @@ public class Student {
     private String DOB;
     private long id;
     private String userName;
-    private CourseProgramme courses;
+    private String course;
     private ArrayList<Module> modules = new ArrayList<>();
+
+    public Student(){
+
+    }
 
     public Student(String name, int age, String DOB, long id) {
         this.name = name;
@@ -17,8 +21,6 @@ public class Student {
         this.DOB = DOB;
         this.id = id;
         this.userName = getUserName();
-        this.courses = courses;
-        this.modules = modules;
     }
 
     public String getName() {
@@ -57,12 +59,12 @@ public class Student {
         return name + age;
     }
 
-    public CourseProgramme getCourses() {
-        return courses;
+    public String getCourses() {
+        return course;
     }
 
-    public void setCourses(CourseProgramme courses) {
-        this.courses = courses;
+    public void setCourses(String course) {
+        this.course = course;
     }
 
     public ArrayList<Module> getModules() {
