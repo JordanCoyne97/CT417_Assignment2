@@ -14,6 +14,15 @@ public class TestMethods {
     private Student student1 = new Student();
 
     @Test
+    public void failTest(){
+        String fail = "fail";
+
+        String expectedAnswer = " ";
+
+        assertEquals(expectedAnswer, fail);
+    }
+
+    @Test
     public void getUserName(){
         student1.setName("Mike");
         student1.setAge(19);
