@@ -1,6 +1,6 @@
 package jordan.coyne;
 
-import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertArrayEquals;
@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 public class TestMethods {
-    
+
     private Student student1 = new Student();
 
     @Test

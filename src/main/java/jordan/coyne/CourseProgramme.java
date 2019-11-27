@@ -1,6 +1,6 @@
 package jordan.coyne;
 
-import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 
 import java.util.ArrayList;
 
@@ -9,8 +9,8 @@ public class CourseProgramme {
     private String courseName;
     private ArrayList<Module> modules = new ArrayList<>();
     private ArrayList<Student> students = new ArrayList<>();
-    private DateTime startDate;
-    private DateTime endDate;
+    private LocalDate startDate;
+    private LocalDate endDate;
 
     public CourseProgramme(){
 
@@ -20,7 +20,7 @@ public class CourseProgramme {
         this.courseName = courseName;
     }
 
-    public CourseProgramme(String courseName, DateTime startDate, DateTime endDate) {
+    public CourseProgramme(String courseName, LocalDate startDate, LocalDate endDate) {
         this.courseName = courseName;
         this.startDate = startDate;
         this.endDate = endDate;
@@ -50,19 +50,19 @@ public class CourseProgramme {
         this.students = students;
     }
 
-    public DateTime getStartDate() {
+    public LocalDate getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(DateTime startDate) {
+    public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
 
-    public DateTime getEndDate() {
+    public LocalDate getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(DateTime endDate) {
+    public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
 }
